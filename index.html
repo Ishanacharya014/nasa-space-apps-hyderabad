@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Space Apps Challenge | Hyderabad 2026</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 3.86-8.86c.41-.53.91-1 1.48-1.37a2.53 2.53 0 0 1 3.16.27 2.53 2.53 0 0 1 .27 3.16c-.37.57-.84 1.07-1.37 1.48A22 22 0 0 1 12 15z"></path><path d="m9 12 3 3"></path></svg>
+        SPACE APPS <span class="highlight">HYD</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#event">Event</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#participate">Participate</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.spaceappschallenge.org/2026/local-events/hyderabad-india/" target="_blank" class="btn btn-primary nav-btn">REGISTER</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="badge">NASA Space Apps 2026</div>
+      <h1>SPACE APPS</h1>
+      <h2 class="subtitle">CHALLENGE <span class="text-accent">HYDERABAD</span></h2>
+      <div class="beginner-alert">
+        🚀 <strong>100% Beginner Friendly!</strong> You don't need to be a coder to join. Designers, storytellers, and dreamers are welcome!
+      </div>
+      <p class="hero-desc">Join the world's largest global hackathon. Participate <strong>in-person</strong> in Hyderabad or join us <strong>virtually</strong> from anywhere. Use NASA's open data to build innovative solutions for challenges on Earth and in space.</p>
+      
+      <div class="hero-actions">
+        <a href="https://www.spaceappschallenge.org/2026/local-events/hyderabad-india/" target="_blank" class="btn btn-primary btn-large">
+          REGISTER NOW
+        </a>
+      </div>
+
+      <div class="countdown-container">
+        <div class="countdown-box">
+          <span id="cd-days">00</span>
+          <span class="cd-label">Days</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-hours">00</span>
+          <span class="cd-label">Hours</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-minutes">00</span>
+          <span class="cd-label">Minutes</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-seconds">00</span>
+          <span class="cd-label">Seconds</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <!-- 3D Planet representation using CSS -->
+      <div class="planet-container">
+        <div class="planet"></div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">MISSION <span class="text-accent">BRIEFING</span></h2>
+        <p class="section-subtitle">What is the NASA Space Apps Challenge?</p>
+      </div>
+      <div class="about-grid">
+        <div class="pro-card">
+          <div class="card-icon">🌍</div>
+          <h3>The Global Hackathon</h3>
+          <p>NASA Space Apps is an international hackathon for coders, scientists, designers, storytellers, makers, builders, and technologists in cities around the world.</p>
+        </div>
+        <div class="pro-card">
+          <div class="card-icon">🛠️</div>
+          <h3>What Happens Here?</h3>
+          <p>Over 48 hours, teams utilize NASA's free and open data to address real-world problems on Earth and in space, creating innovative apps, games, and hardware.</p>
+        </div>
+        <div class="pro-card">
+          <div class="card-icon">🚀</div>
+          <h3>Why Participate?</h3>
+          <p>Connect with a global community, build your portfolio, learn new skills, and potentially have your project recognized by NASA and global space agencies.</p>
+        </div>
+        <div class="pro-card">
+          <div class="card-icon">🇮🇳</div>
+          <h3>Why Hyderabad?</h3>
+          <p>Hyderabad is India's rapidly growing hub for aerospace, technology, and innovation. Home to major IT parks and a vibrant startup ecosystem, it's the perfect launchpad for your Space Apps journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Section -->
+  <section id="event" class="section event">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">EVENT <span class="text-accent">DETAILS</span></h2>
+      </div>
+      
+      <div class="event-grid">
+        <div class="event-info pro-card">
+          <div class="info-row">
+            <span class="info-icon">📅</span>
+            <div>
+              <h4>Date & Time</h4>
+              <p>November 14-15, 2026<br>48-Hour Hackathon</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Format & Venue</h4>
+              <p><strong>Hybrid Event</strong> (Local & Virtual)<br>In-person venue in Hyderabad TBA</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🎒</span>
+            <div>
+              <h4>What to Bring</h4>
+              <p>Laptop, charger, water bottle, ID, and your enthusiasm!</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="schedule pro-card">
+          <h3>Basic Schedule</h3>
+          <ul class="timeline">
+            <li>
+              <div class="time">Nov 14, 9:00 AM</div>
+              <div class="desc">Check-in & Team Formation</div>
+            </li>
+            <li>
+              <div class="time">Nov 14, 11:00 AM</div>
+              <div class="desc">Opening Ceremony & Hackathon Begins</div>
+            </li>
+            <li>
+              <div class="time">Nov 15, 11:59 PM</div>
+              <div class="desc">Project Submission Deadline</div>
+            </li>
+            <li>
+              <div class="time">Nov 16, 10:00 AM</div>
+              <div class="desc">Local Judging & Closing Ceremony</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges Section -->
+  <section id="challenges" class="section challenges">
+    <div class="section-container">
+      <div class="section-header center">
+        <h2 class="section-title">THE <span class="text-accent">CHALLENGES</span></h2>
+        <p class="section-subtitle">Use NASA's open data to solve real-world problems.</p>
+      </div>
+      
+      <div class="challenges-grid">
+        <div class="challenge-card pro-card">
+          <div class="challenge-category">Earth</div>
+          <h3>Climate & Environment</h3>
+          <p>Develop solutions that leverage Earth observation data to understand our changing planet.</p>
+        </div>
+        <div class="challenge-card pro-card">
+          <div class="challenge-category">Space</div>
+          <h3>Space Exploration</h3>
+          <p>Create tools and concepts for living in space, exploring planets, and understanding the universe.</p>
+        </div>
+        <div class="challenge-card pro-card">
+          <div class="challenge-category">Software</div>
+          <h3>Software & Data</h3>
+          <p>Build applications, APIs, and visualizations to make NASA's complex data more accessible.</p>
+        </div>
+      </div>
+      
+      <div class="center-btn mt-4">
+        <a href="https://www.spaceappschallenge.org/2026/challenges/" target="_blank" class="btn btn-outline">VIEW ALL OFFICIAL CHALLENGES</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participate Section -->
+  <section id="participate" class="section participate">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">HOW TO <span class="text-accent">PARTICIPATE</span></h2>
+      </div>
+      
+      <div class="participate-info">
+        <div class="p-card pro-card">
+          <h3>Who can join?</h3>
+          <p>Absolutely anyone! Whether you're a beginner, student, professional, or hobbyist. We need all skills: developers, designers, artists, and storytellers.</p>
+          <div class="beginner-friendly">🌟 We highly encourage beginners to join! Mentors will be there to help you.</div>
+        </div>
+        <div class="p-card pro-card">
+          <h3>Team Size</h3>
+          <p>Teams can range from 1 to 6 members. You can come with a pre-formed team or find teammates at the event during the team formation session.</p>
+        </div>
+      </div>
+      
+      <div class="steps-container mt-5">
+        <div class="step pro-card">
+          <div class="step-num">01</div>
+          <h4>Register</h4>
+          <p>Sign up on the official NASA Space Apps website for the Hyderabad location.</p>
+        </div>
+        <div class="step pro-card">
+          <div class="step-num">02</div>
+          <h4>Form a Team</h4>
+          <p>Connect with other participants online or at the venue to form your squad.</p>
+        </div>
+        <div class="step pro-card">
+          <div class="step-num">03</div>
+          <h4>Pick a Challenge</h4>
+          <p>Review the official challenge statements and choose one to tackle.</p>
+        </div>
+        <div class="step pro-card">
+          <div class="step-num">04</div>
+          <h4>Build & Submit</h4>
+          <p>Develop your solution and submit it on the platform before the deadline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery">
+    <div class="section-container">
+      <div class="section-header center">
+        <h2 class="section-title">PAST <span class="text-accent">MISSIONS</span></h2>
+        <p class="section-subtitle">Glimpses from previous Space Apps hackathons.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item pro-card">
+          <img src="images/space1.jpg" alt="Past Event 1" class="gallery-img">
+        </div>
+        <div class="gallery-item pro-card">
+          <img src="images/space2.jpg" alt="Past Event 2" class="gallery-img">
+        </div>
+        <div class="gallery-item pro-card">
+          <img src="images/space3.jpg" alt="Past Event 3" class="gallery-img">
+        </div>
+        <div class="gallery-item pro-card">
+          <img src="images/space4.jpg" alt="Past Event 4" class="gallery-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section faq">
+    <div class="section-container">
+      <div class="section-header center">
+        <h2 class="section-title">FREQUENTLY ASKED <span class="text-accent">QUESTIONS</span></h2>
+      </div>
+      
+      <div class="faq-container">
+        <!-- FAQ Items -->
+        <div class="faq-item pro-card">
+          <button class="faq-question">Is it free? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes! Participation in the NASA Space Apps Challenge is 100% free.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Who can participate? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Anyone! Students, professionals, coders, designers, scientists, makers, and enthusiasts of all ages.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Do I need coding experience? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>No! Many successful teams have members who focus on design, research, storytelling, and project management.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Can I participate alone? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes, individual participation is allowed, but we highly encourage forming teams of 2-6 people for the best experience.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Can I form a team at the event? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Absolutely. We will have dedicated team formation sessions before the hackathon begins.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">What should I bring? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Bring your laptop, charger, any hardware you plan to use, a water bottle, and a creative mindset.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Where is the venue? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>The exact venue in Hyderabad will be announced soon. Stay tuned to our community channels for updates.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">How do submissions work? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Projects must be submitted through the official NASA Space Apps website on the project page created for your team.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Is food provided? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Food and beverage arrangements will be confirmed closer to the event date. Please stay tuned to our community channels for updates.</p></div>
+        </div>
+        <div class="faq-item pro-card">
+          <button class="faq-question">Who can I contact? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>You can reach out to our Local Lead, Lokesh Ram Chand Bazaru, directly at lokeshramchand@gmail.com.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Contact Section -->
+  <footer id="contact" class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 3.86-8.86c.41-.53.91-1 1.48-1.37a2.53 2.53 0 0 1 3.16.27 2.53 2.53 0 0 1 .27 3.16c-.37.57-.84 1.07-1.37 1.48A22 22 0 0 1 12 15z"></path><path d="m9 12 3 3"></path></svg>
+            SPACE APPS <span class="highlight">HYD</span>
+          </a>
+          <p class="mt-2 text-muted">Join the mission. Build the future.</p>
+          <a href="https://www.spaceappschallenge.org/2026/local-events/hyderabad-india/" target="_blank" class="btn btn-primary mt-3">REGISTER NOW</a>
+        </div>
+        
+        <div class="footer-community">
+          <h3>Join the Community</h3>
+          <div class="social-links">
+            <a href="#" class="social-btn">💬 Discord</a>
+            <a href="#" class="social-btn">📱 WhatsApp</a>
+            <a href="#" class="social-btn">📸 Instagram</a>
+            <a href="#" class="social-btn">💼 LinkedIn</a>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Local Lead</h3>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem;">
+            <img src="images/Lokesh.jpg" alt="Lokesh Ram Chand Bazaru" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--nasa-blue);">
+            <div>
+              <p style="margin: 0; font-weight: 700; color: var(--text-main);">Lokesh Ram Chand Bazaru</p>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">India • @lokeshramchand-space</p>
+            </div>
+          </div>
+          <p style="margin-top: 1rem;"><strong>Email:</strong> <a href="mailto:lokeshramchand@gmail.com" class="text-accent" style="text-decoration:none;">lokeshramchand@gmail.com</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 NASA Space Apps Challenge Hyderabad. This is an independent local event page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
